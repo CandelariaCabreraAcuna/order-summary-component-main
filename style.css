@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url(./images/pattern-background-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 60%;
+    margin-top: 8rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 2px 2px 31px 0px rgba(0,0,0,0.33);
+    -webkit-box-shadow: 2px 2px 31px 0px rgba(0,0,0,0.33);
+    -moz-box-shadow: 2px 2px 31px 0px rgba(0,0,0,0.33);
+    width: 375px;
+    height: 600px;
+    gap: 1.2rem;
+    background-color: white;
+}
+
+img{
+    width: 375px;
+    border-radius: 2rem 2rem 0 0;
+}
+.card h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.card p{
+    color: hsl(223, 47%, 70%);
+    text-align: center;
+    width: 18.2rem;
+    font-size: 1.1rem;
+}
+.content-plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:  hsl(224, 23%, 97%);
+    border-radius: 0.5rem;
+    height: 5.1rem;
+    width: 18.2rem;
+    color: hsl(223, 47%, 70%);
+}
+.icon-music{
+    width: 50px;
+    height: 50px;
+}
+.content-plan .icon-text{
+    margin-left: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.content-plan .icon-text span{
+    color: black;
+    font-weight: bold;
+}
+.card .payment{
+    width: 18.2rem;
+    height: 3.2rem;
+    border-radius: 0.8rem;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: -4px 6px 24px -9px rgba(0,0,0,0.74);
+-webkit-box-shadow: -4px 6px 24px -9px rgba(0,0,0,0.74);
+-moz-box-shadow: -4px 6px 24px -9px rgba(0,0,0,0.74);
+    background-color:  hsl(245, 75%, 52%);
+}
+.card .payment:hover{
+    background-color:  hsl(245, 75%, 70%);
+    border: none;
+}
+.card .cancel{
+    width: 18.2rem;
+    height: 3.2rem;
+    border-radius: 0.8rem;
+    color: hsl(223, 47%, 70%);
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.card .cancel:hover{
+    color: black;
+}
+.content-plan a:hover{
+    text-decoration: none;
+}
+@media(min-width:500px){
+    body{
+        background-color: hsl(225, 100%, 94%);
+    }
+}
